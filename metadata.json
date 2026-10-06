@@ -1,0 +1,6 @@
+{
+  "name": "AAKAY Café & Kitchen",
+  "description": "AAKAY Café & Kitchen — a premium café and restaurant portfolio website featuring handcrafted food, coffee, desserts and memorable dining experiences.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
