@@ -1,14 +1,22 @@
 import { MenuItem, GalleryItem, ReviewItem } from '../types';
 
-// Generated asset paths
+// Asset imports for reliable Vite bundling and production delivery
+import heroImg from '../assets/images/aakay_hero_ambience_1791280203390.jpg';
+import interiorImg from '../assets/images/aakay_cafe_interior_1791280221460.jpg';
+import coffeeImg from '../assets/images/aakay_artisan_coffee_1791280235531.jpg';
+import burgerImg from '../assets/images/aakay_signature_burger_1791280251197.jpg';
+import dessertImg from '../assets/images/aakay_dessert_cheesecake_1791280266496.jpg';
+import snacksImg from '../assets/images/aakay_crispy_snacks_1791280335304.jpg';
+import drinksImg from '../assets/images/aakay_refreshing_drinks_1791280350649.jpg';
+
 export const IMAGES = {
-  hero: '/src/assets/images/aakay_hero_ambience_1791280203390.jpg',
-  interior: '/src/assets/images/aakay_cafe_interior_1791280221460.jpg',
-  coffee: '/src/assets/images/aakay_artisan_coffee_1791280235531.jpg',
-  burger: '/src/assets/images/aakay_signature_burger_1791280251197.jpg',
-  desserts: '/src/assets/images/aakay_dessert_cheesecake_1791280266496.jpg',
-  snacks: '/src/assets/images/aakay_crispy_snacks_1791280335304.jpg',
-  drinks: '/src/assets/images/aakay_refreshing_drinks_1791280350649.jpg',
+  hero: heroImg,
+  interior: interiorImg,
+  coffee: coffeeImg,
+  burger: burgerImg,
+  desserts: dessertImg,
+  snacks: snacksImg,
+  drinks: drinksImg,
 };
 
 export const MENU_ITEMS: MenuItem[] = [
@@ -255,17 +263,17 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   },
   {
     id: 'g3',
-    title: 'AAKAY Signature Burger',
-    category: 'mains',
+    title: 'AAKAY Signature Gourmet Burger',
+    category: 'burger',
     categoryLabel: 'Burger',
     image: IMAGES.burger,
-    description: 'Gourmet brioche bun, house-spiced handcrafted patty, melted cheese, and crisp garden produce served with seasoned fries.',
+    description: 'Gourmet brioche bun, house-spiced handcrafted patty, melted cheddar cheese, and crisp garden produce served with seasoned fries.',
     aspect: 'aspect-4/3',
   },
   {
     id: 'g4',
-    title: 'Golden Crispy Starters',
-    category: 'starters',
+    title: 'Golden Crispy Starters & Bites',
+    category: 'snacks',
     categoryLabel: 'Snacks',
     image: IMAGES.snacks,
     description: 'Savoury, crunchy potato bites and cheesy loaded nachos freshly prepared to share with your closest friends.',
@@ -277,7 +285,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     category: 'desserts',
     categoryLabel: 'Desserts',
     image: IMAGES.desserts,
-    description: 'Rich, comforting confections baked daily in-house using pure dairy and fair-trade Belgian cocoa.',
+    description: 'Rich, comforting confections baked daily in-house using pure dairy, wild berry compote, and fair-trade Belgian cocoa.',
     aspect: 'aspect-4/3',
   },
   {
@@ -287,6 +295,15 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     categoryLabel: 'Drinks',
     image: IMAGES.drinks,
     description: 'Vibrant fruit-infused iced teas and hand-pressed lemonades infused with fresh mint and fragrant citrus botanicals.',
+    aspect: 'aspect-4/3',
+  },
+  {
+    id: 'g7',
+    title: 'Sunlit Dining & Timber Ambiance',
+    category: 'interior',
+    categoryLabel: 'Café Interior',
+    image: IMAGES.hero,
+    description: 'Spacious rustic seating crafted from reclaimed oak, welcoming natural afternoon light and relaxed conversations.',
     aspect: 'aspect-4/3',
   },
 ];

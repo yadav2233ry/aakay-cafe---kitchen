@@ -20,6 +20,20 @@ export const ContactSection: React.FC = () => {
     }, 400);
   };
 
+  const handleScrollToReservation = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const el = document.getElementById('reservation');
+    if (el) {
+      const navOffset = 80;
+      const elementPosition = el.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - navOffset;
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth',
+      });
+    }
+  };
+
   return (
     <section id="contact" className="py-20 lg:py-28 bg-[#F4EFE6]/60 border-t border-[#2A1E17]/8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -290,6 +304,7 @@ export const ContactSection: React.FC = () => {
 
                 <a
                   href="#reservation"
+                  onClick={handleScrollToReservation}
                   className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-2 rounded-lg font-semibold text-white bg-[#2A1E17] hover:bg-[#3D2C22] transition-colors"
                 >
                   <Navigation className="w-3.5 h-3.5 text-[#E5C992]" />

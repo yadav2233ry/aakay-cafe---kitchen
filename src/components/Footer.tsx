@@ -48,27 +48,33 @@ export const Footer: React.FC = () => {
 
             {/* Social Icons (Demo Links) */}
             <div className="flex items-center gap-3 pt-2">
-              <a
-                href="#contact"
-                className="w-9 h-9 rounded-lg bg-white/5 hover:bg-[#C5A059] hover:text-[#211711] text-[#E5DCCF] flex items-center justify-center transition-colors"
+              <button
+                type="button"
+                onClick={() => scrollTo('#contact')}
+                className="w-9 h-9 rounded-lg bg-white/5 hover:bg-[#C5A059] hover:text-[#211711] text-[#E5DCCF] flex items-center justify-center transition-colors cursor-pointer"
                 aria-label="Instagram Demo Link"
+                title="Instagram (Portfolio Demo)"
               >
                 <Instagram className="w-4 h-4" />
-              </a>
-              <a
-                href="#contact"
-                className="w-9 h-9 rounded-lg bg-white/5 hover:bg-[#C5A059] hover:text-[#211711] text-[#E5DCCF] flex items-center justify-center transition-colors"
+              </button>
+              <button
+                type="button"
+                onClick={() => scrollTo('#contact')}
+                className="w-9 h-9 rounded-lg bg-white/5 hover:bg-[#C5A059] hover:text-[#211711] text-[#E5DCCF] flex items-center justify-center transition-colors cursor-pointer"
                 aria-label="Facebook Demo Link"
+                title="Facebook (Portfolio Demo)"
               >
                 <Facebook className="w-4 h-4" />
-              </a>
-              <a
-                href="#contact"
-                className="w-9 h-9 rounded-lg bg-white/5 hover:bg-[#C5A059] hover:text-[#211711] text-[#E5DCCF] flex items-center justify-center transition-colors"
+              </button>
+              <button
+                type="button"
+                onClick={() => scrollTo('#contact')}
+                className="w-9 h-9 rounded-lg bg-white/5 hover:bg-[#C5A059] hover:text-[#211711] text-[#E5DCCF] flex items-center justify-center transition-colors cursor-pointer"
                 aria-label="X / Twitter Demo Link"
+                title="X / Twitter (Portfolio Demo)"
               >
                 <Twitter className="w-4 h-4" />
-              </a>
+              </button>
             </div>
           </div>
 

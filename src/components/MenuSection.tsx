@@ -113,6 +113,19 @@ export const MenuSection: React.FC<MenuSectionProps> = ({
             </div>
             <a
               href="#reservation"
+              onClick={(e) => {
+                e.preventDefault();
+                const el = document.getElementById('reservation');
+                if (el) {
+                  const navOffset = 80;
+                  const elementPosition = el.getBoundingClientRect().top;
+                  const offsetPosition = elementPosition + window.pageYOffset - navOffset;
+                  window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth',
+                  });
+                }
+              }}
               className="text-xs font-semibold text-[#8C5D39] hover:text-[#2A1E17] underline decoration-[#C5A059] underline-offset-4"
             >
               Proceed to Table Booking →

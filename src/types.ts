@@ -15,7 +15,7 @@ export interface MenuItem {
 export interface GalleryItem {
   id: string;
   title: string;
-  category: 'interior' | 'coffee' | 'mains' | 'starters' | 'desserts' | 'drinks';
+  category: 'interior' | 'coffee' | 'burger' | 'snacks' | 'desserts' | 'drinks';
   categoryLabel: string;
   image: string;
   description: string;
